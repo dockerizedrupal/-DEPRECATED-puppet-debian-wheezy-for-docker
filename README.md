@@ -9,9 +9,9 @@ Build the image
 Push the image to private docker registry
 ---------------------
 
-`# docker tag puppet docker-registry.simpledrupalcloud.com:5000/puppet`
+`# docker tag puppet docker-registry.simpledrupalcloud.com/puppet`
 
-`# docker push docker-registry.simpledrupalcloud.com:5000/puppet`
+`# docker push docker-registry.simpledrupalcloud.com/puppet`
 
 Run as container
 ---------------
