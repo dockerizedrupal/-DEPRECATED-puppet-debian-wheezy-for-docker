@@ -10,3 +10,5 @@ wget https://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
 dpkg -i /tmp/$PACKAGE
 
 apt-get update
+
+rm /tmp/$PACKAGE
