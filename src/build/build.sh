@@ -6,7 +6,7 @@ apt-get -y install wget
 
 PACKAGE=puppetlabs-release-wheezy.deb
 
-wget https://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
+wget http://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
 
 dpkg -i /tmp/$PACKAGE
 
