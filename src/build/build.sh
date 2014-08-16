@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get -y install lsb-release
-apt-get -y install openssl ca-certificates
-apt-get -y install wget
+apt-get -y install lsb-release openssl ca-certificates wget
 
 which /usr/bin/lsb_release
 
-PACKAGE=puppetlabs-release-$(/usr/bin/lsb_release -sc).deb
+PACKAGE=puppetlabs-release-$(lsb_release -sc).deb
 
 wget https://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
 
