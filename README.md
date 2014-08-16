@@ -18,7 +18,7 @@ Pull the image from the private docker registry
 
 `# docker pull docker-registry.simpledrupalcloud.com/puppet`
 
-Run as container
+Run the container
 ---------------
 
 `# docker run --name puppet -d docker-registry.simpledrupalcloud.com/puppet`
