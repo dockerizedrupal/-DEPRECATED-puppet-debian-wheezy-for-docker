@@ -1,12 +1,19 @@
 docker-puppet
 ============
 
-Build a container
+Build the image
 -----------------
 
 `# docker build -t puppet http://git.simpledrupalcloud.com/viljaste/docker-puppet.git`
 
-Run a container
+Push the image to private docker registry
+---------------------
+
+`# docker tag puppet docker-registry.simpledrupalcloud.com:5000/puppet`
+
+`# docker push docker-registry.simpledrupalcloud.com:5000/puppet`
+
+Run as container
 ---------------
 
-`# docker run --name puppet -d puppet`
+`# docker run --name puppet -t -i puppet /bin/bash`
