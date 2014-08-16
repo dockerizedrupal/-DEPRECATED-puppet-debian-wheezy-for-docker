@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 apt-get update
+apt-get -y install lsb-release
 apt-get -y install openssl
 apt-get -y install wget
 
