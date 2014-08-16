@@ -4,7 +4,7 @@ apt-get update
 apt-get -y install lsb_release
 apt-get -y install wget
 
-PACKAGE=puppetlabs-release-wheezy.deb
+PACKAGE=puppetlabs-release-$(lsb_release -sc).deb
 
 wget http://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
 
