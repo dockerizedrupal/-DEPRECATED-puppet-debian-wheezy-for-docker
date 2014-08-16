@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.12
+FROM ubuntu:14.04
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
