@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:wheezy
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
