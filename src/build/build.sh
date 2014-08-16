@@ -1,5 +1,8 @@
 #!/bin/sh
 
+dpkg-divert --local --rename --add /sbin/initctl
+ln -s /bin/true /sbin/initctl
+
 apt-get update
 apt-get -y install wget
 
