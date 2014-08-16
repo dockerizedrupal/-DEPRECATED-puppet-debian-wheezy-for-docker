@@ -1,10 +1,9 @@
 #!/bin/sh
 
 apt-get update
-apt-get -y install lsb_release
 apt-get -y install wget
 
-PACKAGE=puppetlabs-release-$(lsb_release -sc).deb
+PACKAGE=puppetlabs-release-precise.deb
 
 wget https://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
 
