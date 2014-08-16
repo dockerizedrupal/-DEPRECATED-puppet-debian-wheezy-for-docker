@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:12.04
 
 MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
 
