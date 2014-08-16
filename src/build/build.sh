@@ -3,7 +3,7 @@
 apt-get update
 apt-get -y install wget
 
-PACKAGE=puppetlabs-release-precise.deb
+PACKAGE=puppetlabs-release-$(lsb_release -sc).deb
 
 wget https://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
 
