@@ -4,7 +4,7 @@ apt-get update
 apt-get -y install openssl
 apt-get -y install wget
 
-lsb_release -sc
+which lsb_release
 
 PACKAGE=puppetlabs-release-$(lsb_release -sc).deb
 
