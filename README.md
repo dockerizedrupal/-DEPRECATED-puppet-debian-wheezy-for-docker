@@ -4,7 +4,7 @@ docker-puppet
 Build the image
 -----------------
 
-`# docker build -t puppet http://git.simpledrupalcloud.com/viljaste/docker-puppet.git`
+`# docker build -t puppet http://git.simpledrupalcloud.com/simpledrupalcloud/docker-puppet.git`
 
 Push the image to private docker registry
 ---------------------
