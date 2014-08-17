@@ -19,4 +19,7 @@ apt-get update
 
 apt-get -y install puppet
 
+# https://tickets.puppetlabs.com/browse/PUP-2566
+sed -i '/templatedir=\$confdir\/templates/d' /etc/puppet/puppet.conf
+
 rm /tmp/$PACKAGE
