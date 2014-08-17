@@ -7,8 +7,6 @@ apt-get -y install openssl
 apt-get -y install ca-certificates
 apt-get -y install wget
 
-which /usr/bin/lsb_release
-
 PACKAGE=puppetlabs-release-$(lsb_release -sc).deb
 
 wget https://apt.puppetlabs.com/$PACKAGE -O /tmp/$PACKAGE
