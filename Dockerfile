@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-MAINTAINER Jürgen Viljaste <j.viljaste@gmail.com>
+MAINTAINER Simple Drupal Cloud <support@simpledrupalcloud.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
