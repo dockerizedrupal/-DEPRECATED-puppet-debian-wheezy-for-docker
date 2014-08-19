@@ -25,5 +25,3 @@ mkdir -p /etc/puppet/modules/customfacts/lib/facter
 cp /tmp/build/etc/puppet/modules/customfacts/lib/facter/env.rb /etc/puppet/modules/customfacts/lib/facter/env.rb
 
 cp /tmp/build/etc/puppet/hiera.yaml /etc/puppet/hiera.yaml
-
-rm /tmp/$PACKAGE
