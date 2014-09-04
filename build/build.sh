@@ -26,4 +26,6 @@ cp /tmp/build/etc/puppet/modules/customfacts/lib/facter/env.rb /etc/puppet/modul
 
 cp /tmp/build/etc/puppet/hiera.yaml /etc/puppet/hiera.yaml
 
+puppet module install puppetlabs/stdlib
+
 puppet apply /tmp/build/etc/puppet/manifests/build.pp
