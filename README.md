@@ -1,7 +1,6 @@
 docker-puppet
 =============
 
-Access environment variables from Puppet
-----------------------------------------
-
-    http://projects.puppetlabs.com/projects/puppet/wiki/Environment_Variables_Patterns/1
+    sudo docker build \
+      -t simpledrupalcloud/puppet \
+      http://git.simpledrupalcloud.com/simpledrupalcloud/docker-puppet.git
