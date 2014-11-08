@@ -8,3 +8,7 @@
       && git checkout dev \
       && sudo docker build -t simpledrupalcloud/puppet:dev . \
       && cd -
+
+## License
+
+**MIT**
