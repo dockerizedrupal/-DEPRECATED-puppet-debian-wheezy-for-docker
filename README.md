@@ -1,5 +1,7 @@
 # docker-puppet-dev
 
+The base image for Docker container [simpledrupalcloud/base](https://registry.hub.docker.com/u/simpledrupalcloud/base/).
+
 ## Build the image
 
     TMP="$(mktemp -d)" \
