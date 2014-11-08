@@ -1,6 +1,6 @@
 # docker-puppet-dev
 
-The base image for Docker container [simpledrupalcloud/base](https://registry.hub.docker.com/u/simpledrupalcloud/base/).
+The base image for Docker container [simpledrupalcloud/supervisor](https://registry.hub.docker.com/u/simpledrupalcloud/supervisor/).
 
 ## Build the image
 
