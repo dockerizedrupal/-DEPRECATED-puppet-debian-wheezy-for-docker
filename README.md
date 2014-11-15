@@ -1,4 +1,4 @@
-# docker-puppet-dev
+# docker-puppet
 
 The base image for Docker container [simpledrupalcloud/supervisor](https://registry.hub.docker.com/u/simpledrupalcloud/supervisor/).
 
@@ -7,8 +7,7 @@ The base image for Docker container [simpledrupalcloud/supervisor](https://regis
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-puppet.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout dev \
-      && sudo docker build -t simpledrupalcloud/puppet:dev . \
+      && sudo docker build -t simpledrupalcloud/puppet:latest . \
       && cd -
 
 ## License
