@@ -1,4 +1,4 @@
-# docker-puppet-dev
+# docker-puppet
 
 The base image for Docker container [simpledrupalcloud/supervisor](https://registry.hub.docker.com/u/simpledrupalcloud/supervisor/).
 
