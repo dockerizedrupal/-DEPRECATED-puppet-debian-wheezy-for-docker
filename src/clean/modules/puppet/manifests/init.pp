@@ -1,4 +1,8 @@
-class supervisor {
+class puppet {
+  exec { 'apt-get clean':
+    path => ['/usr/bin']
+  }
+
   exec { 'rm -rf /src/build':
     path => ['/bin']
   }
@@ -13,9 +17,5 @@ class supervisor {
 
   exec { 'rm -rf /var/lib/apt/lists/*':
     path => ['/bin']
-  }
-
-  exec { 'apt-get clean':
-    path => ['/usr/bin']
   }
 }
