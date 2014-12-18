@@ -6,6 +6,6 @@ class puppet {
 
   file { '/etc/puppet/parser/functions/file_exists.rb':
     ensure => present,
-    source => 'puppet:///modules/puppet/parser/functions/file_exists.rb'
+    source => 'puppet:///modules/puppet/etc/puppet/parser/functions/file_exists.rb'
   }
 }
