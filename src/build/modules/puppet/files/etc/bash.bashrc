@@ -16,7 +16,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # set a fancy prompt (non-color, overwrite the one in /etc/profile)
-PS1="\[$(tput bold)\]\[$(tput setaf 2)\]\u@\h | \w \n\\$ \[$(tput sgr0)\]"
+PS1="\[$(tput bold)\]\[$(tput setaf 2)\]\u@\h:\w\\$ \[$(tput sgr0)\]"
 
 # enable bash completion in interactive shells
 if ! shopt -oq posix; then
