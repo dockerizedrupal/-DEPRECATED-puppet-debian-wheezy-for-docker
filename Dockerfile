@@ -7,9 +7,6 @@ ENV DEBIAN_FRONTEND noninteractive
 
 ADD ./src /src
 
-RUN apt-get update
-
-RUN /src/build.sh
-RUN /src/clean.sh
+RUN apt-get update && /src/build.sh && /src/clean.sh
 
 CMD ["/src/run.sh"]
