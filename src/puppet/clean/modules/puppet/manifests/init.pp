@@ -61,6 +61,4 @@ class puppet {
   bash_exec { 'rm -rf /var/lib/apt/lists/*': }
 
   bash_exec { 'rm -rf /tmp/*': }
-
-  bash_exec { 'rm -rf /var/lib/apt/lists/*': }
 }
