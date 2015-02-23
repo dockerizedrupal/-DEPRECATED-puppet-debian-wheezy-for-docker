@@ -7,6 +7,6 @@ ENV DEBIAN_FRONTEND noninteractive
 
 ADD ./src /src
 
-RUN /src/puppet.sh build
+RUN /src/entrypoint.sh build
 
-CMD ["/src/puppet.sh", "run"]
+CMD ["/src/entrypoint.sh", "run"]
