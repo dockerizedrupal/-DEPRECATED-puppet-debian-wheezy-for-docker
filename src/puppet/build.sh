@@ -22,4 +22,4 @@ sed -i '/templatedir=\$confdir\/templates/d' /etc/puppet/puppet.conf
 
 puppet module install puppetlabs/stdlib
 
-puppet apply --modulepath=/src/build/modules /src/build/build.pp
+puppet apply --modulepath=/src/puppet/build/modules /src/puppet/build/build.pp
