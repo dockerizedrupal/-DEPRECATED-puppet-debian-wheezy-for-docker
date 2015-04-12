@@ -1,3 +1,3 @@
 puppet:
-  image: viljaste/puppet:dev
+  image: viljaste/puppet:latest
   hostname: puppet
