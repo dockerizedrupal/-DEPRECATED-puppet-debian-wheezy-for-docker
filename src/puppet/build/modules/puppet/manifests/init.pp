@@ -1,6 +1,4 @@
 class puppet {
-  require puppet::packages
-
   file { '/etc/apt/sources.list.d/debian.list':
     ensure => present,
     source => 'puppet:///modules/puppet/etc/apt/sources.list.d/debian.list',
@@ -17,6 +15,4 @@ class puppet {
     source => 'puppet:///modules/puppet/etc/bash.bashrc',
     mode => 644
   }
-
-  bash_exec { 'locale-gen en_US.UTF-8': }
 }
