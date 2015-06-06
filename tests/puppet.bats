@@ -1,20 +1,20 @@
 #!/usr/bin/env bats
 
-FIG_FILE="${BATS_TEST_DIRNAME}/puppet.yml"
+docker-compose_FILE="${BATS_TEST_DIRNAME}/puppet.yml"
 
 container() {
-  echo "$(fig -f ${FIG_FILE} ps puppet | grep puppet | awk '{ print $1 }')"
+  echo "$(docker-compose -f ${docker-compose_FILE} ps puppet | grep puppet | awk '{ print $1 }')"
 }
 
 setup() {
-  fig -f "${FIG_FILE}" up -d --allow-insecure-ssl
+  docker-compose -f "${docker-compose_FILE}" up -d --allow-insecure-ssl
 
   sleep 10
 }
 
 teardown() {
-  fig -f "${FIG_FILE}" kill
-  fig -f "${FIG_FILE}" rm --force
+  docker-compose -f "${docker-compose_FILE}" kill
+  docker-compose -f "${docker-compose_FILE}" rm --force
 }
 
 @test "puppet" {
