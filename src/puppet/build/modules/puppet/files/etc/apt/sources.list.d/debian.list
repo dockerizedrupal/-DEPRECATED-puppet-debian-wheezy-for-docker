@@ -1,2 +1,2 @@
-deb http://http.debian.net/debian stable contrib non-free
-deb-src http://http.debian.net/debian stable contrib non-free
+deb http://http.debian.net/debian wheezy contrib non-free
+deb-src http://http.debian.net/debian wheezy contrib non-free
