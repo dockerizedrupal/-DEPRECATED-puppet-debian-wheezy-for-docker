@@ -2,10 +2,7 @@
 
 apt-get update
 
-apt-get install -y lsb-release
-apt-get install -y openssl
-apt-get install -y ca-certificates
-apt-get install -y wget
+DEBIAN_FRONTEND=noninteractive apt-get install -y lsb-release openssl ca-certificates wget
 
 PACKAGE=puppetlabs-release-$(lsb_release -sc).deb
 
@@ -15,7 +12,7 @@ dpkg -i "/tmp/${PACKAGE}"
 
 apt-get update
 
-apt-get install -y puppet
+DEBIAN_FRONTEND=noninteractive apt-get install -y puppet
 
 # https://tickets.puppetlabs.com/browse/PUP-2566
 sed -i '/templatedir=\$confdir\/templates/d' /etc/puppet/puppet.conf
