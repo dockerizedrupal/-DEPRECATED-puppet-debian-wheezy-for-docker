@@ -1,7 +1,7 @@
 class puppet {
-  file { '/etc/apt/sources.list.d/debian.list':
+  file { '/etc/apt/sources.list':
     ensure => present,
-    source => 'puppet:///modules/puppet/etc/apt/sources.list.d/debian.list',
+    source => 'puppet:///modules/puppet/etc/apt/sources.list',
     mode => 644
   }
 
