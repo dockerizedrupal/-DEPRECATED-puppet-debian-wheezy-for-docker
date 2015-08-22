@@ -3,9 +3,9 @@
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && GIT_SSL_NO_VERIFY=true git clone https://git.beyondcloud.io/viljaste/docker-puppet.git "${TMP}" \
+      && git clone https://github.com/dockerizedrupal/docker-puppet.git "${TMP}" \
       && cd "${TMP}" \
-      && sudo docker build -t viljaste/puppet:latest . \
+      && sudo docker build -t dockerizedrupal/puppet:latest . \
       && cd -
 
 ## License
