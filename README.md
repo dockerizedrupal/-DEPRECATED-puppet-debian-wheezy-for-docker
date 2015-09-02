@@ -5,7 +5,8 @@
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-puppet-debian-wheezy.git "${TMP}" \
       && cd "${TMP}" \
-      && sudo docker build -t dockerizedrupal/puppet-debian-wheezy:latest . \
+      $$ git checkout 1.0.1 \
+      && sudo docker build -t dockerizedrupal/puppet-debian-wheezy:1.0.1 . \
       && cd -
 
 ## License
