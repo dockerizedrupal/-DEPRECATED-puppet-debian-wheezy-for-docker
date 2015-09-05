@@ -7,7 +7,7 @@ container() {
 }
 
 setup() {
-  docker-compose -f "${docker-compose_FILE}" up -d --allow-insecure-ssl
+  docker-compose -f "${docker-compose_FILE}" up -d
 
   sleep 10
 }

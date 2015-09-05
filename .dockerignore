@@ -3,3 +3,5 @@
 .gitignore
 README.md
 LICENSE.md
+tests
+VERSION.md
