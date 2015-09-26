@@ -1,12 +1,21 @@
 # docker-puppet-debian-wheezy
 
+An intermediate base Docker image for [dockerizedrupal/supervisor-debian-wheezy](https://github.com/dockerizedrupal/docker-supervisor-debian-wheezy) that is used in the [Dockerized Drupal](https://dockerizedrupal.com/) project.
+
+## Run the container
+
+    CONTAINER="puppet" && sudo docker run \
+      --name "${CONTAINER}" \
+      -h "${CONTAINER}" \
+      dockerizedrupal/puppet-debian-wheezy:1.1.0
+
 ## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-puppet-debian-wheezy.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.0.6 \
-      && sudo docker build -t dockerizedrupal/puppet-debian-wheezy:1.0.6 . \
+      && git checkout 1.1.0 \
+      && sudo docker build -t dockerizedrupal/puppet-debian-wheezy:1.1.0 . \
       && cd -
 
 ## License

@@ -1,0 +1,3 @@
+puppet:
+  image: dockerizedrupal/puppet-debian-wheezy:1.1.0
+  hostname: puppet

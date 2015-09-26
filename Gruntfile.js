@@ -1,5 +1,5 @@
-var current_version = '1.0.5';
-var new_version = '1.0.6';
+var current_version = '1.0.6';
+var new_version = '1.1.0';
 
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-replace');
@@ -39,8 +39,8 @@ module.exports = function(grunt) {
           {
             expand: true,
             src: [
-              'README.md',
-              'tests/puppet-debian-wheezy.yml'
+              'docker-compose.yml',
+              'README.md'
             ]
           }
         ]
