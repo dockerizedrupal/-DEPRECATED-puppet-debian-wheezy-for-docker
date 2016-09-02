@@ -9,15 +9,15 @@ A base Docker image for [dockerizedrupal/supervisor-debian-wheezy](https://githu
     CONTAINER="puppet" && sudo docker run \
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
-      dockerizedrupal/puppet-debian-wheezy:1.1.2
+      dockerizedrupal/puppet-debian-wheezy:1.1.3
 
 ## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-puppet-debian-wheezy.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.1.2 \
-      && sudo docker build -t dockerizedrupal/puppet-debian-wheezy:1.1.2 . \
+      && git checkout 1.1.3 \
+      && sudo docker build -t dockerizedrupal/puppet-debian-wheezy:1.1.3 . \
       && cd -
 
 ## License
