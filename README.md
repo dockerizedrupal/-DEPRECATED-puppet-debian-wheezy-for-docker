@@ -2,7 +2,7 @@
 
 # docker-puppet-debian-wheezy
 
-An base Docker image for [dockerizedrupal/supervisor-debian-wheezy](https://github.com/dockerizedrupal/docker-supervisor-debian-wheezy).
+A base Docker image for [dockerizedrupal/supervisor-debian-wheezy](https://github.com/dockerizedrupal/docker-supervisor-debian-wheezy).
 
 ## Run the container
 
