@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "puppet-debian-wheezy"
 
   config.vm.provider "virtualbox" do |v|
-    name = "dockerizedrupal-docker-puppet-debian-wheezy-" + VERSION
+    name = "dockerizedrupal--DEPRECATED-puppet-debian-wheezy-for-docker-" + VERSION
 
     name.gsub!(".", "-")
 

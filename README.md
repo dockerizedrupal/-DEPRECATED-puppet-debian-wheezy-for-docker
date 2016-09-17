@@ -1,8 +1,10 @@
-> **Notice:** *This project is part of the [Dockerized Drupal](https://dockerizedrupal.com/) initiative.*
+# WARNING
 
-# docker-puppet-debian-wheezy
+> **Notice:** *This project is deprecated. Read more about the reason why [here](https://github.com/dockerizedrupal/base-debian-wheezy-for-docker/issues/3).*
 
-A base Docker image for [dockerizedrupal/supervisor-debian-wheezy](https://github.com/dockerizedrupal/docker-supervisor-debian-wheezy).
+# -DEPRECATED-puppet-debian-wheezy-for-docker
+
+A base Docker image for [dockerizedrupal/supervisor-debian-wheezy](https://github.com/dockerizedrupal/-DEPRECATED-supervisor-debian-wheezy-for-docker).
 
 ## Run the container
 
@@ -14,7 +16,7 @@ A base Docker image for [dockerizedrupal/supervisor-debian-wheezy](https://githu
 ## Build the image
 
     TMP="$(mktemp -d)" \
-      && git clone https://github.com/dockerizedrupal/docker-puppet-debian-wheezy.git "${TMP}" \
+      && git clone https://github.com/dockerizedrupal/-DEPRECATED-puppet-debian-wheezy-for-docker.git "${TMP}" \
       && cd "${TMP}" \
       && git checkout 1.1.3 \
       && sudo docker build -t dockerizedrupal/puppet-debian-wheezy:1.1.3 . \

@@ -1,9 +1,9 @@
 {
-  "name": "docker-puppet-debian-wheezy",
+  "name": "-DEPRECATED-puppet-debian-wheezy-for-docker",
   "version": "1.1.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dockerizedrupal/docker-puppet-debian-wheezy.git"
+    "url": "https://github.com/dockerizedrupal/-DEPRECATED-puppet-debian-wheezy-for-docker.git"
   },
   "license": "MIT",
   "dependencies": {
